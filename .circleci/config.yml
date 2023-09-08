@@ -11,7 +11,7 @@ jobs:
           name: Deploy to Server
           command: |
             sudo apt-get install -y sshpass
-            sshpass -p '%&M&$H##ZGMD' scp -r routes/ root@43.231.127.73:/var
+            sshpass -p 'wyScale5NAVtesting' scp -r routes/ root@167.99.67.107:/var
 
 workflows:
   version: 2
