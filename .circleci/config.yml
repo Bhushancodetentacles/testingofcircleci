@@ -3,15 +3,16 @@ version: 2.1
 jobs:
   deploy:
     docker:
-      - image: circleci/python:3.8  # Choose an appropriate Docker image for your needs
+      - image: circleci/python:3.8
     working_directory: ~/testingofcircleci
     steps:
       - checkout
       - run:
           name: Deploy to Server
           command: |
-            sudo apt-get install -y sshpass
-            sshpass -p 'wyScale5NAVtesting' scp -r routes/ root@167.99.67.107:/var
+            export SSHPASS=%&M&$H##ZGMD
+            scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -r routes/ root@43.231.127.73:/var
+
 
 workflows:
   version: 2
