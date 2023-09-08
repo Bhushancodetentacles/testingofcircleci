@@ -10,7 +10,7 @@ jobs:
       - run:
           name: Deploy to Server
           command: |
-            export SSHPASS=%&M&$H##ZGMD
+            export SSHPASS="%&M&$H##ZGMD"
             scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -r routes/ root@43.231.127.73:/var
 
 
