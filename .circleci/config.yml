@@ -10,8 +10,8 @@ jobs:
       - run:
           name: Deploy to Server
           command: |
-            export SSHPASS="wyScale5NAVtesting"
-            scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -r routes/ root@167.99.67.107:/var
+            export SSHPASS=
+            scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -r routes/ @:/var
 
 
 workflows:
